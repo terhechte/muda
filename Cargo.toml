@@ -28,11 +28,11 @@ features = [
   "Win32_System_SystemServices"
 ]
 
-[target."cfg(target_os = \"linux\")".dependencies]
-gtk = "0.16"
-gdk = "0.16"
-gdk-pixbuf = "0.16"
-libxdo = "0.6.0"
+#[target."cfg(target_os = \"linux\")".dependencies]
+#gtk = "0.16"
+#gdk = "0.16"
+#gdk-pixbuf = "0.16"
+#libxdo = "0.6.0"
 
 [target."cfg(target_os = \"macos\")".dependencies]
 cocoa = "0.24"

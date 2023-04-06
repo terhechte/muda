@@ -603,7 +603,7 @@ impl PredefinedMenuItem {
         let item_type = &child.predefined_item_type;
         let ns_menu_item = match item_type {
             PredfinedMenuItemType::Separator => unsafe {
-                NSMenuItem::separatorItem(nil).autorelease()
+                NSMenuItem::separatorItem(nil) //.retain()
             },
             _ => create_ns_menu_item(&child.text, item_type.selector(), &child.accelerator),
         };
